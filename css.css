@@ -1,0 +1,52 @@
+header {
+  background-color: red;
+  color: wheat;
+  text-align: center;
+}
+body {
+  background-color: beige;
+}
+
+table {
+  border: solid 1px black;
+  background-color: white;
+  width: 80%;
+  text-transform: capitalize;
+}
+tr:nth-child(2n + 2) {
+  background-color: grey;
+  color: white;
+}
+
+section:has(table) {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+div:has(form) {
+  width: 100%;
+  display: grid;
+  form {
+    display: grid;
+    width: fit-content;
+    button {
+      width: fit-content;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+    }
+    div {
+      margin-top: 0.5rem;
+      width: 2rem;
+    }
+  }
+}
+
+.griddiv {
+  display: grid;
+  grid-template-columns: auto auto; /* Sørg for, at kolonnerne tilpasser sig deres indhold */
+  align-items: start; /* Elementerne tilpasses deres naturlige højde */
+  min-height: 100vh;
+}
