@@ -46,7 +46,7 @@ div:has(form) {
 
 .griddiv {
   display: grid;
-  grid-template-columns: auto auto; /* Sørg for, at kolonnerne tilpasser sig deres indhold */
-  align-items: start; /* Elementerne tilpasses deres naturlige højde */
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
   min-height: 100vh;
 }
